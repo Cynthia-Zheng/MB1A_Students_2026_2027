@@ -1,0 +1,20 @@
+---
+title: "NS2 Practical 1"
+author: "Cynthia Zheng"
+---
+
+I will calculate the total number of genes with regionally elevated expression in the forebrain - that is, the cerebral cortex, basal ganglia, thalamus and hypothalamus - regions in human, pig and mouse, and compare these results.
+
+Total regionally elevated genes in human:
+```{r}
+sum(180, 83, 57, 110)
+```
+Total regionally elevated genes in pig:
+```{r}
+sum(109, 157, 31, 45)
+```
+Total regionally elevated genes in mouse:
+```{r}
+sum(55, 185, 60, 98)
+```
+Overall, humans had the highest number of genes with regionally elevated expression.

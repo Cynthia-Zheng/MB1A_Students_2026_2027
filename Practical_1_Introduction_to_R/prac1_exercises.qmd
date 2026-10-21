@@ -1,0 +1,13 @@
+---
+title: "Practical_1_Introduction_to_R/prac1_exercises.qmd"
+author: "Cynthia Zheng"
+---
+
+```{r}
+round(3.14159)
+```
+
+```{r}
+print(rep(5, 7))
+```
+

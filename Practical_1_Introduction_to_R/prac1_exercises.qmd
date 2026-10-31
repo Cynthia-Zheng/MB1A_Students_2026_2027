@@ -1,5 +1,5 @@
 ---
-title: "Practical_1_Introduction_to_R/prac1_exercises.qmd"
+title: "data frame and CSV format"
 author: "Cynthia Zheng"
 ---
 
@@ -9,5 +9,21 @@ round(3.14159)
 
 ```{r}
 print(rep(5, 7))
+```
+```{r}
+data_frame <- tibble(
+  cell_ID = c("CX1", "CX2"),
+  treated = c(TRUE, FALSE),
+  num_cells_before = c(5415, 8123),
+  num_cells_after = c(1432, 7543)
+)
+
+gt(data_frame)
+```
+```{r}
+weather <- read_csv("data/weather_data.csv")
+```
+```{r}
+
 ```
 

@@ -1,0 +1,41 @@
+---
+title: "Practical_1_Introduction_to_R/ukhsa_data_analysis.qmda"
+author: "Cynthia zheng"
+---
+
+```{r}
+install.packages("fortunes")
+```
+```{r}
+library(tidyverse)
+library(gt)
+
+rhinovirus <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
+
+gt(head(rhinovirus))
+```
+```{r}
+library(fortunes)
+```
+```{r}
+fortune()
+```
+```{r}
+cell_id <- c("CX1", "CX2")
+treated <- c(TRUE, FALSE)
+n_before <- c(5415, 8123)
+n_after <- c(1432, 7543)
+print(cell_id[2])
+```
+```{r}
+ggplot(rhinovirus, aes(
+  x = date,
+  y = metric_value
+)) +
+  geom_line(colour = "blue") + 
+  xlab("Year") + 
+  ylab("Percentage") + 
+  ggtitle("percentage of positive PCR results for rhinovirus")
+```
+
+
